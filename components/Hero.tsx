@@ -36,15 +36,30 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-6 text-center text-2xl sm:text-3xl md:text-4xl font-bold tracking-wide">
-  <span className="text-orange-400">🔥 2M+</span>
-  <span className="text-white">Fans</span>
-  <span className="text-white/60">•</span>
-  <span className="text-pink-400">50+</span>
-  <span className="text-white">Brand Partners</span>
-  <span className="text-white/60">•</span>
-  <span className="text-red-400">200K</span>
-  <span className="text-white">Rewards Redeemed</span>
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-3 gap-y-2
+                text-base sm:text-lg md:text-2xl font-semibold leading-tight">
+  {/* 2M+ Fans */}
+  <div className="flex items-center gap-2 whitespace-nowrap">
+    <span className="text-orange-400">🔥 2M+</span>
+    <span className="text-white">Fans</span>
+  </div>
+
+  {/* separator (muncul mulai sm ke atas) */}
+  <span className="hidden sm:inline text-white/50">•</span>
+
+  {/* 50+ Brand Partners */}
+  <div className="flex items-center gap-2 whitespace-nowrap">
+    <span className="text-pink-400">50+</span>
+    <span className="text-white">Brand Partners</span>
+  </div>
+
+  <span className="hidden sm:inline text-white/50">•</span>
+
+  {/* 200K Rewards Redeemed */}
+  <div className="flex items-center gap-2 whitespace-nowrap">
+    <span className="text-red-400">200K</span>
+    <span className="text-white">Rewards Redeemed</span>
+  </div>
 </div>
       </div>
     </section>
