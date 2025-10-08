@@ -8,9 +8,9 @@ export default function Navbar() {
         <Link href="/" className="font-extrabold text-xl">COPPAMAGZ</Link>
         <ul className="hidden md:flex gap-6 text-white/85">
           <li><a href="#rewards">Home</a></li>
-          <li><a href="#rewards">Vocher</a></li>
+          <li><a href="#rewards">Vouchers</a></li>
           <li><a href="#articles">Community</a></li>
-          <li><a href="#community">Event</a></li>
+          <li><a href="#community">Events</a></li>
         </ul>
         <div className="hidden md:flex items-center gap-3">
           <span className="badge">⭐ 1,250 XP</span>
