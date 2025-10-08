@@ -1,28 +1,51 @@
-import Image from 'next/image';
-import { metrics } from '@/lib/mock';
+import Image from "next/image";
+import { metrics } from "@/lib/mock";
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="relative w-full h-screen overflow-hidden flex items-center justify-center text-center">
+      {/* Background Image */}
       <Image
-        src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229"
+        src="/heroo.jpg" // pastikan file ada di /public/hero.jpg
         alt="Concert"
-        width={2400} height={1400} priority
-        className="w-full h-[70svh] object-cover"
+        fill
+        priority
+        className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-coppaDark/60" />
-      <div className="section absolute inset-0 flex flex-col justify-center gap-6">
-        <h1 className="h1 max-w-3xl">Join Indonesia’s #1 K-Culture Fan Economy</h1>
-        <p className="p max-w-2xl">Earn rewards, redeem exclusive merch, and connect with millions of fans.</p>
-        <div className="flex gap-3">
-          <a className="btn-primary" href="#rewards">Join Now (Free)</a>
-          <a className="btn-ghost" href="#rewards">See Rewards</a>
+
+      
+
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl px-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
+          Join Indonesia’s #1 <br /> K-Culture Fan Economy
+        </h1>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#rewards"
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold text-lg shadow-md hover:opacity-90 transition"
+          >
+            Hot News
+          </a>
+          <a
+            href="#rewards"
+            className="px-8 py-3 rounded-full border border-white/70 text-white font-semibold text-lg hover:bg-white/10 transition"
+          >
+            Reward Point
+          </a>
         </div>
-        <div className="mt-3 flex gap-6 text-white/80 text-sm">
-          <span>🔥 {metrics.fans} Fans</span>
-          <span>• {metrics.brands} Brand Partners</span>
-          <span>• {metrics.redeemed} Rewards Redeemed</span>
-        </div>
+
+        <div className="mt-12 flex flex-wrap justify-center gap-6 text-center text-2xl sm:text-3xl md:text-4xl font-bold tracking-wide">
+  <span className="text-orange-400">🔥 2M+</span>
+  <span className="text-white">Fans</span>
+  <span className="text-white/60">•</span>
+  <span className="text-pink-400">50+</span>
+  <span className="text-white">Brand Partners</span>
+  <span className="text-white/60">•</span>
+  <span className="text-red-400">200K</span>
+  <span className="text-white">Rewards Redeemed</span>
+</div>
       </div>
     </section>
   );

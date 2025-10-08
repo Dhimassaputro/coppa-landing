@@ -7,9 +7,10 @@ export default function Navbar() {
       <nav className="section flex items-center justify-between py-4">
         <Link href="/" className="font-extrabold text-xl">COPPAMAGZ</Link>
         <ul className="hidden md:flex gap-6 text-white/85">
-          <li><a href="#rewards">Rewards</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#community">Community</a></li>
+          <li><a href="#rewards">Home</a></li>
+          <li><a href="#rewards">Vocher</a></li>
+          <li><a href="#articles">Community</a></li>
+          <li><a href="#community">Event</a></li>
         </ul>
         <div className="hidden md:flex items-center gap-3">
           <span className="badge">⭐ 1,250 XP</span>
